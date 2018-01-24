@@ -1,0 +1,24 @@
+
+        <div class="col s12 m3 hoverable">
+          <div class="card">
+            <div class="card-image">
+              <img src="{{user.image}}">
+              <div class="card-panel teal lighten-2">
+                <div class="row">
+                  <span [ngClass]="{'marked': isMarker}" class="card-title">{{user.name | uppercase}}</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <p>{{user.street}}</p>
+              <p>{{user.city}}</p>
+              <p>{{user.state}}</p>
+              <p>{{user.postcode}}</p>
+            </div>
+            <div class="card-action center">
+              <a (click)="onClick()"
+              class="waves-effect waves-light btn pulse"><i class="material-icons left">cloud</i>Cloud</a>
+            </div>
+          </div>
+        </div>
